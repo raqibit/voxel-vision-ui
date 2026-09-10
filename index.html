@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07070b" />
+    <meta
+      name="description"
+      content="Voxel Vision — an immersive AI-powered 3D creation interface."
+    />
+    <title>Voxel Vision AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site">
+      <section id="home" class="hero-section" aria-label="Voxel Vision introduction">
+        <div class="experience-frame reveal is-visible">
+          <aside class="brand-rail">
+            <button class="brand" data-scroll="home" aria-label="Voxel Vision home">
+              <span class="brand-glyph" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>VV</span>
+            </button>
+
+            <div class="rail-copy">
+              <p class="eyebrow">Creative AI studio</p>
+              <h2>Let’s shape something remarkable.</h2>
+              <a href="mailto:hello@voxelvision.studio">hello@voxelvision.studio</a>
+              <p>Zurich · London · Everywhere</p>
+            </div>
+
+            <div class="social-links" aria-label="Social links">
+              <a href="#features" aria-label="Behance">Be</a>
+              <a href="#features" aria-label="Instagram">Ig</a>
+              <a href="#features" aria-label="LinkedIn">In</a>
+            </div>
+          </aside>
+
+          <div class="workspace">
+            <header class="topbar">
+              <button class="mobile-brand" data-scroll="home" aria-label="Voxel Vision home">VV</button>
+
+              <nav class="nav-pills" aria-label="Primary navigation">
+                <button class="active" data-scroll="home">Home</button>
+                <button data-scroll="features">Features</button>
+                <button data-scroll="process">How it works</button>
+                <button data-scroll="pricing">Pricing</button>
+              </nav>
+
+              <div class="top-actions">
+                <a class="ghost-button" href="mailto:hello@voxelvision.studio?subject=Voxel%20Vision%20login">Log in</a>
+                <a class="solid-button" href="mailto:hello@voxelvision.studio?subject=Join%20Voxel%20Vision">Join beta</a>
+                <button class="menu-button" aria-label="Open menu" aria-expanded="false">
+                  <span></span><span></span>
+                </button>
+              </div>
+            </header>
+
+            <div class="hero-panel">
+              <div class="aurora aurora-one" aria-hidden="true"></div>
+              <div class="aurora aurora-two" aria-hidden="true"></div>
+              <div class="grid-lines" aria-hidden="true"></div>
+
+              <div class="hero-copy">
+                <p class="eyebrow">AI-powered 3D creation</p>
+                <h1>Ideas become <span>dimensional.</span></h1>
+                <p class="hero-description">
+                  Create, customize, and prepare expressive 3D forms with one focused creative workspace.
+                </p>
+              </div>
+
+              <div class="scene-wrap" aria-label="Interactive abstract 3D model">
+                <canvas id="form-canvas"></canvas>
+                <div class="scene-glow" aria-hidden="true"></div>
+              </div>
+
+              <div class="scene-label scene-label-left"><span>REAL-TIME</span><strong>01</strong></div>
+              <div class="scene-label scene-label-right"><strong>98%</strong><span>OPTIMIZED</span></div>
+
+              <div class="scene-controls">
+                <button id="motion-toggle" aria-label="Pause 3D animation">
+                  <span class="pause-icon" aria-hidden="true"></span>
+                  <span class="control-label">Pause form</span>
+                </button>
+                <button id="theme-toggle" aria-label="Use light theme">
+                  <span class="sun-icon" aria-hidden="true">☼</span>
+                  <span class="control-label">Light mode</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="insight-rail">
+            <article class="insight-card metric-card">
+              <div><p class="eyebrow">Community</p><h3>100K<span>+</span></h3></div>
+              <p>Active makers turning prompts into production-ready forms.</p>
+              <button data-scroll="features" aria-label="Explore features">↗</button>
+            </article>
+
+            <article class="insight-card testimonial-card">
+              <div class="card-heading">
+                <p class="eyebrow">Creator notes</p>
+                <div class="mini-controls">
+                  <button id="testimonial-prev" aria-label="Previous testimonial">‹</button>
+                  <button id="testimonial-next" aria-label="Next testimonial">›</button>
+                </div>
+              </div>
+              <div class="avatar-row" aria-hidden="true">
+                <span class="selected">AM</span><span>JL</span><span>SK</span>
+              </div>
+              <p class="quote">“It feels like sketching, only the sketch has depth.”</p>
+              <p class="quote-author"><span id="creator-name">Ari</span> · <span id="creator-role">Product designer</span></p>
+            </article>
+
+            <article class="insight-card feature-teaser">
+              <div class="teaser-icon" aria-hidden="true">✦</div>
+              <p class="eyebrow">Smart workflow</p>
+              <h3>Automated 3D modeling</h3>
+              <p>Go from rough intent to an editable scene without breaking your creative flow.</p>
+              <button data-scroll="process">See the process <span>→</span></button>
+            </article>
+          </aside>
+
+          <button class="swipe-cta" data-scroll="features">
+            <span class="cta-orb">→</span>
+            <span>Swipe to enter the studio</span>
+            <span class="cta-line" aria-hidden="true"></span>
+            <span class="cta-down">↓</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="features" class="content-section features-section">
+        <div class="section-intro reveal">
+          <p class="eyebrow">A faster creative loop</p>
+          <h2>From first thought to final form.</h2>
+          <p>
+            Powerful 3D tools presented as a calm, visual workflow—so the interface supports the idea instead of competing with it.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-topline"><span>01</span><i aria-hidden="true">✦</i></div>
+            <h3>Prompt to form</h3>
+            <p>Describe a shape, surface, or mood and generate a polished starting point in seconds.</p>
+            <button data-scroll="process" aria-label="Learn about prompt to form">→</button>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-topline"><span>02</span><i aria-hidden="true">◇</i></div>
+            <h3>Edit in space</h3>
+            <p>Refine geometry and materials with direct, visual controls that stay out of your way.</p>
+            <button data-scroll="process" aria-label="Learn about editing in space">→</button>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-topline"><span>03</span><i aria-hidden="true">▱</i></div>
+            <h3>Export anywhere</h3>
+            <p>Prepare lightweight assets for the web, product mockups, motion, and real-time scenes.</p>
+            <button data-scroll="process" aria-label="Learn about export options">→</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="content-section process-section">
+        <div class="process-visual reveal" aria-hidden="true">
+          <div class="process-glow glow-one"></div>
+          <div class="process-glow glow-two"></div>
+          <span class="process-ring ring-one"></span>
+          <span class="process-ring ring-two"></span>
+          <div class="process-core">VV</div>
+        </div>
+
+        <div class="process-copy reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>A simple route through complex space.</h2>
+          <ol>
+            <li><span>01</span><div><strong>Describe</strong><p>Start with a sentence, sketch, or visual reference.</p></div></li>
+            <li><span>02</span><div><strong>Direct</strong><p>Tune silhouette, material, light, and detail in real time.</p></div></li>
+            <li><span>03</span><div><strong>Deliver</strong><p>Export a clean, optimized asset for your next tool.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="pricing" class="content-section pricing-section">
+        <div class="pricing-copy reveal">
+          <p class="eyebrow">Early access</p>
+          <h2>Start experimenting. Keep every idea moving.</h2>
+          <p>Join the beta list for launch updates, prototype access, and a first look at the creative workspace.</p>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div><span>Prototype pass</span><strong>Free</strong><p>During the private beta</p></div>
+          <ul>
+            <li><span>✦</span> Generative form studies</li>
+            <li><span>✦</span> Live materials and lighting</li>
+            <li><span>✦</span> Web-ready exports</li>
+          </ul>
+          <a href="mailto:hello@voxelvision.studio?subject=Join%20the%20Voxel%20Vision%20beta">
+            Request access <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-mark">VV</div>
+        <p>Voxel Vision AI · A concept interface for dimensional creativity.</p>
+        <button data-scroll="home">Back to top <span>↗</span></button>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
