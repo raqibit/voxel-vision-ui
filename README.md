@@ -1,17 +1,19 @@
-# Voxel Vision AI
+# Voxel Vision UI
 
-A self-contained, responsive concept interface inspired by the supplied futuristic 3D landing-page reference.
+A self-contained, responsive concept interface inspired by the futuristic 3D landing-page references.
 
-## Run it
+**🚀 Live Demo:** [https://raqibit.github.io/voxel-vision-ui/](https://raqibit.github.io/voxel-vision-ui/)
+
+## Run it locally
 
 No build tools or dependencies are required.
 
-1. Unzip the folder.
+1. Clone or download the repository.
 2. Open `index.html` in a modern browser.
 
 For local development with live reload, you can also use any static web server, for example the Live Server extension in VS Code.
 
-## Included
+## Included Features
 
 - Responsive desktop, tablet, and mobile layouts
 - Animated interactive 3D-style canvas form
